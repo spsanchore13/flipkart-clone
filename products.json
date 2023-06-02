@@ -1,0 +1,55 @@
+{
+    "productId": 5,
+    "name": "REDMI 10 (Caribbean Green, 128 GB)  (6 GB RAM)",
+    "description": "Let go of the inhibitions and enjoy speed operation and flawless user experience with Redmi 10. This phone is powered by Snapdragon 680 processor with a savvy 6 nm architecture that makes juggling fun. This device is incorporated with 6 GB of RAM and 128 GB of internal storage that provides you with seamless efficiency. With the UFS 2.2 storage, you can experience an unmatched speed in the operation. This smartphone boasts a large 6000 mAh battery with an 18 W fast charging capability giving your phone a necessary boost to achieve optimal efficiency. With a mesmerising 17.04 cm (6.71) display and a 20.6: 9 aspect ratio, Redmi 10 offers an immersive user experience. The Redmi 10 is equipped with a 50 MP camera and a 2 MP depth sensor allowing you to capture breathtaking pictures with enthralling imagery.",
+    "category": "Mobile",
+    "brand": "Redmi",
+    "price": 10999,
+    "discount": 20,
+    "reviews": 21000,
+    "rating": 3500,
+    "colors": [
+        "Green",
+        "Blue",
+        "Red"
+    ],
+    "sizes": [
+        "4GB-64GB",
+        "6GB-128GB"
+    ],
+    "images": [
+        "https://rukminim1.flixcart.com/image/832/832/xif0q/mobile/9/m/p/narzo-n53-rmx3761-realme-original-imagpygt4ywjecxk.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/832/832/xif0q/mobile/9/0/g/narzo-n53-rmx3761-realme-original-imagpygtsha7khd4.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/832/832/xif0q/mobile/n/x/1/narzo-n53-rmx3761-realme-original-imagpygtreu6eugu.jpeg?q=70"
+    ],
+    "availability": true,
+    "seller": [
+        {
+            "name": "Royal Mobile Services",
+            "rating": 4.9,
+            "location": "Sanchore, Rajasthan"
+        },
+        {
+            "name": "Flipkart",
+            "rating": 4.8,
+            "location": "Bengluru"
+        }
+    ],
+    "features": [
+        {
+            "feature": "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB"
+        },
+        {
+            "feature": "17.02 cm (6.7 inch) HD+ Display"
+        },
+        {
+            "feature": "50MP + 2MP | 5MP Front Camera"
+        },
+        {
+            "feature": "6000 mAh Lithium Polymer Battery"
+        },
+        {
+            "feature": "Qualcomm Snapdragon 680 Processor"
+        }
+    ]
+}
