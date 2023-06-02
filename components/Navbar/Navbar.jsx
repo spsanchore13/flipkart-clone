@@ -23,8 +23,9 @@ import {
   VStack,
   Divider,
   Avatar,
+  Image,
 } from "@chakra-ui/react";
-import Image from "next/image";
+// import Image from "next/image";
 import SearchBar from "./SearchBar";
 import { ChevronDownIcon, HamburgerIcon, SearchIcon } from "@chakra-ui/icons";
 import { useState } from "react";
@@ -133,7 +134,12 @@ const Navbar = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <Image src={item.image} width={70} height={80} />
+            <Image
+              alt={item.name}
+              src={item.image}
+              width="70px"
+              height="80px"
+            />
             <Text
               _hover={{ color: "#2874f0" }}
               fontWeight="semibold"
@@ -199,7 +205,12 @@ const SmallScreenNavbar = () => {
                   justifyContent="center"
                   alignItems="center"
                 >
-                  <Image src={item.image} width={60} height={70} />
+                  <Image
+                    alt={item.name}
+                    src={item.image}
+                    width={60}
+                    height={70}
+                  />
                   <Text
                     _hover={{ color: "#2874f0" }}
                     fontWeight="semibold"

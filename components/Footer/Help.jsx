@@ -18,8 +18,13 @@ const Help = ({ menu }) => {
           <Heading fontSize="18px" color="#77797b">
             {item.menu}
           </Heading>
-          {item.submenu.map((el) => (
-            <Link display="block" color="white" href={el.href}>
+          {item.submenu.map((el, i) => (
+            <Link
+              key={`${el.name}-${i}`}
+              display="block"
+              color="white"
+              href={el.href}
+            >
               {el.name}
             </Link>
           ))}

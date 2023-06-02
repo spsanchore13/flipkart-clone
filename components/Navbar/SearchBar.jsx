@@ -8,8 +8,9 @@ import {
   Stack,
   Text,
   useDisclosure,
+  Image,
 } from "@chakra-ui/react";
-import Image from "next/image";
+// import Image from "next/image";
 
 import { ChevronDownIcon, SearchIcon } from "@chakra-ui/icons";
 import { BsCart3 } from "react-icons/BS";
@@ -32,8 +33,8 @@ const SearchBar = () => {
         <Image
           alt="logo"
           src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
-          height={50}
-          width={100}
+          height="40px"
+          width="100px"
         />
         <Text
           color="white"

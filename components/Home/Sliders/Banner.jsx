@@ -43,6 +43,8 @@ const HomeSlider = () => {
       <Box>
         <AspectRatio maxW="100%" ratio={6 / 1}>
           <Image
+            width="auto"
+            height="auto"
             alt="banner"
             objectFit="cover"
             src="https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/f68a68591f7bf55d.jpg?q=50"
@@ -53,6 +55,8 @@ const HomeSlider = () => {
       <Box>
         <AspectRatio maxW="100%" ratio={6 / 1}>
           <Image
+            width="auto"
+            height="auto"
             alt="banner"
             objectFit="cover"
             src="https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/a1d93b6bc446790d.jpg?q=50"
@@ -62,6 +66,8 @@ const HomeSlider = () => {
       <Box>
         <AspectRatio maxW="100%" ratio={6 / 1}>
           <Image
+            width="auto"
+            height="auto"
             alt="banner"
             objectFit="cover"
             src="https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/bada3904b2749464.jpg?q=50"
