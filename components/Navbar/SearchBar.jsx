@@ -13,7 +13,7 @@ import {
 // import Image from "next/image";
 
 import { ChevronDownIcon, SearchIcon } from "@chakra-ui/icons";
-import { BsCart3 } from "react-icons/BS";
+import { BsCart3 } from "react-icons/bs";
 import AuthModal from "../Auth/AuthModal";
 
 const SearchBar = () => {

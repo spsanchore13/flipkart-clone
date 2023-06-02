@@ -28,8 +28,8 @@ import {
 // import Image from "next/image";
 import SearchBar from "./SearchBar";
 import { ChevronDownIcon, HamburgerIcon, SearchIcon } from "@chakra-ui/icons";
-import { useState } from "react";
-import { BsCart3 } from "react-icons/BS";
+
+import { BsCart3 } from "react-icons/bs";
 
 const Nav_Items = [
   {
