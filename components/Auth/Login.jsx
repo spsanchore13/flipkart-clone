@@ -10,8 +10,23 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { FcGoogle } from "react-icons/fc";
+import { signIn, signOut, useSession, getProviders } from "next-auth/react";
+import { useState, useEffect } from "react";
 
 const Login = ({ setIsNewUser }) => {
+  const { data: session } = useSession();
+
+  const [providers, setProviders] = useState(null);
+
+  useEffect(() => {
+    const setUpProviders = async () => {
+      const response = await getProviders();
+      setProviders(response);
+    };
+
+    setUpProviders();
+  }, []);
+
   return (
     <Stack borderRadius={10} h="500px" display="flex" flexDirection="row">
       <VStack
@@ -58,15 +73,20 @@ const Login = ({ setIsNewUser }) => {
             Login
           </Button>
 
-          <Button
-            w="100%"
-            _hover={{ backgroundColor: "#ffeaa7" }}
-            color="black"
-            backgroundColor="#ffeaa7"
-            rightIcon={<FcGoogle size="24px" />}
-          >
-            Continue With Google
-          </Button>
+          {providers &&
+            Object.values(providers).map((provider) => (
+              <Button
+                key={provider.id}
+                w="100%"
+                _hover={{ backgroundColor: "#ffeaa7" }}
+                color="black"
+                backgroundColor="#ffeaa7"
+                onClick={() => signIn(provider.id)}
+                rightIcon={<FcGoogle size="24px" />}
+              >
+                Continue With Google
+              </Button>
+            ))}
         </VStack>
         <Button
           variant="link"

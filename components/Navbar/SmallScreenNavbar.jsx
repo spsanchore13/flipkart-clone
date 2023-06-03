@@ -118,7 +118,9 @@ const SmallScreenNavbar = () => {
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Flipkart</DrawerHeader>
+          <DrawerHeader borderBottomWidth="1px">
+            Welcome to flipkart
+          </DrawerHeader>
           <DrawerBody>
             <VStack align="start">
               {Nav_Items.map((item, index) => (
@@ -127,15 +129,15 @@ const SmallScreenNavbar = () => {
                   cursor="pointer"
                   display="flex"
                   flexDirection="row"
-                  gap="10px"
+                  gap="20px"
                   justifyContent="center"
                   alignItems="center"
                 >
                   <Image
                     alt={item.name}
                     src={item.image}
-                    width={60}
-                    height={70}
+                    width="65px"
+                    height="70px"
                   />
                   <Text
                     _hover={{ color: "#2874f0" }}
@@ -178,7 +180,7 @@ const SmallScreenNavbar = () => {
         </InputGroup>
       </HStack>
       <Spacer />
-      <Box>
+      {/* <Box>
         <Button
           variant="link"
           p={2}
@@ -187,9 +189,9 @@ const SmallScreenNavbar = () => {
         >
           Cart
         </Button>
-      </Box>
+      </Box> */}
       <Spacer />
-      <Box>
+      {/* <Box>
         <Menu>
           <MenuButton aria-label="Options" variant="outline">
             <Avatar
@@ -206,7 +208,7 @@ const SmallScreenNavbar = () => {
             <MenuItem command="⌘T">New Tab</MenuItem>
           </MenuList>
         </Menu>
-      </Box>
+      </Box> */}
     </Flex>
   );
 };
