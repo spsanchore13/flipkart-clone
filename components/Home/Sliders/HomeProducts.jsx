@@ -19,14 +19,14 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 900 },
     items: 4,
-    slidesToSlide: 4, // optional, default to 1.
+    slidesToSlide: 3, // optional, default to 1.
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    breakpoint: { max: 1024, min: 468 },
+    items: 2,
+    slidesToSlide: 6, // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -67,8 +67,12 @@ const HomePageSlider = ({ type }) => {
       m={10}
       p={3}
     >
-      <VStack w="20%" justify="center" spacing="20px">
-        <Heading fontWeight="400" textAlign="center">
+      <VStack w={["40%", "40%", "40%", "20%"]} justify="center" spacing="20px">
+        <Heading
+          fontSize={["18px", "10px", "22px", "26px"]}
+          fontWeight="400"
+          textAlign="center"
+        >
           {type}
         </Heading>
         <Button
@@ -80,7 +84,7 @@ const HomePageSlider = ({ type }) => {
           View All
         </Button>
       </VStack>
-      <Box w="80%">
+      <Box w={["60%", "70%", "60%", "80%"]}>
         <Carousel
           // customRightArrow={<CustomRightArrow />}
           swipeable={false}
@@ -95,107 +99,24 @@ const HomePageSlider = ({ type }) => {
           customTransition="all .5"
           transitionDuration={500}
           containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
+          // removeArrowOnDeviceType={["tablet", "mobile"]}
           // deviceType={this.props.deviceType}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
-          <Box boxSize="220px" cursor="pointer">
-            <Text>Item 1</Text>
-            <Image
-              _hover={{ transform: "scale(1.1)" }}
-              src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
-              alt="product"
-            />
-          </Box>
+          {new Array(12).fill(0).map((el, i) => (
+            <Box key={i} boxSize="220px" cursor="pointer">
+              <Text>{`image + ${i + 1}`}</Text>
+              <Image
+                h="80%"
+                w="80%"
+                objectFit="contain"
+                _hover={{ transform: "scale(1.1)" }}
+                src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000"
+                alt="product"
+              />
+            </Box>
+          ))}
         </Carousel>
       </Box>
     </Stack>
