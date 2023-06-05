@@ -7,6 +7,7 @@ import HomePageSlider from "@/components/Home/Sliders/HomeProducts";
 import { Stack } from "@chakra-ui/react";
 
 export default function Home() {
+  
   return (
     <Stack mt="20px" spacing={10}>
       <HomeSlider />
